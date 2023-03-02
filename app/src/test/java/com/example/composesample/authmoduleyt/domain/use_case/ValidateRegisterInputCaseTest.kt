@@ -4,7 +4,7 @@ import com.example.composesample.authmoduleyt.domain.model.RegisterInputValidati
 import com.google.common.truth.Truth
 import org.junit.Assert.*
 import org.junit.Test
-
+//testing input validation cases
 class ValidateRegisterInputCaseTest {
 
     private val validateRegisterInputUseCase = ValidateRegisterInputCase()
