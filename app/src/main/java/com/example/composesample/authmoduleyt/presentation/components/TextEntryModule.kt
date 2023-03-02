@@ -17,6 +17,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -93,7 +94,6 @@ fun TextEntryModule(
             textStyle = MaterialTheme.typography.body2,
             keyboardOptions = KeyboardOptions(keyboardType = keyboardType),
             visualTransformation = visualTransformation
-
         )
     }
 }
@@ -108,16 +108,11 @@ fun TextEntryModulePreview() {
             .padding(10.dp, 0.dp, 10.dp, 5.dp),
         hint = "tamerlankayak@gmail.com",
         leadingIcon = Icons.Default.Email,
-        textValue = "",
+        textValue = "TextInput",
         textColor = Color.Black,
         cursorColor = orange,
         onValueChanged = {},
-        onTrailingIconClick = { })
+        onTrailingIconClick = { },
+        visualTransformation = PasswordVisualTransformation()
+    )
 }
-
-
-
-
-
-
-
