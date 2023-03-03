@@ -20,10 +20,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.composesample.authmoduleyt.presentation.components.AuthButton
-import com.example.composesample.authmoduleyt.presentation.components.BubbleAnimation
-import com.example.composesample.authmoduleyt.presentation.components.HeaderBackground
-import com.example.composesample.authmoduleyt.presentation.components.TextEntryModule
+import com.example.composesample.authmoduleyt.presentation.components.*
 import com.example.composesample.authmoduleyt.presentation.components.viewmodel.RegisterViewModel
 import com.example.composesample.ui.theme.*
 
@@ -34,14 +31,14 @@ fun RegisterScreen(
     registerViewModel: RegisterViewModel = hiltViewModel()
 ) {
 
-//    NavDestinationHelper(
-//        shouldNavigate = {
-//            registerViewModel.registerState.isSuccessfullyRegistered
-//        },
-//        destination = {
-//            onRegisterSuccessNavigation()
-//        }
-//    )
+    NavDestinationHelper(
+        shouldNavigate = {
+            registerViewModel.registerState.isSuccessfullyRegistered
+        },
+        destination = {
+            onRegisterSuccessNavigation()
+        }
+    )
 
     Box(
         modifier = Modifier

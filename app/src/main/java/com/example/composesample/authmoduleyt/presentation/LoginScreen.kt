@@ -20,10 +20,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.composesample.authmoduleyt.presentation.components.AuthButton
-import com.example.composesample.authmoduleyt.presentation.components.BubbleAnimation
-import com.example.composesample.authmoduleyt.presentation.components.HeaderBackground
-import com.example.composesample.authmoduleyt.presentation.components.TextEntryModule
+import com.example.composesample.authmoduleyt.presentation.components.*
 import com.example.composesample.authmoduleyt.presentation.components.viewmodel.LoginViewModel
 import com.example.composesample.ui.theme.*
 
@@ -34,14 +31,14 @@ fun LoginScreen(
     loginViewModel: LoginViewModel = hiltViewModel()
 ) {
 
-//    NavDestinationHelper(
-//        shouldNavigate = {
-//            loginViewModel.loginState.isSuccessfullyLoggedIn
-//        },
-//        destination = {
-//            onLoginSuccessNavigation()
-//        }
-//    )
+    NavDestinationHelper(
+        shouldNavigate = {
+            loginViewModel.loginState.isSuccessfullyLoggedIn
+        },
+        destination = {
+            onLoginSuccessNavigation()
+        }
+    )
 
     Box(
         modifier = Modifier
@@ -154,7 +151,7 @@ fun LoginContainer(
             modifier = Modifier
                 .fillMaxWidth(),
             description = "Email address",
-            hint = "KApps@gmail.com",
+            hint = "example@mail.com",
             textValue = emailValue(),
             textColor = gray,
             cursorColor = orange,
