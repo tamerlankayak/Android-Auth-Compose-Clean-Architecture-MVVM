@@ -5,6 +5,7 @@ import com.example.composesample.authmoduleyt.domain.use_case.ValidateLoginInput
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
+//testing and checking login inputs
 class ValidateLoginInputCaseTest {
     private val validateLoginInputUseCase = ValidateLoginInputCase();
 
