@@ -9,4 +9,4 @@ Viewmodel
 
 Custom View and Animation
 
-![jetpack compose icon_RGB](https://user-images.githubusercontent.com/29164777/222916275-c446cb94-c4a0-44bb-a1fe-c4a32ddabcfc.png)
+![jetpack compose icon_RGB](https://user-images.githubusercontent.com/29164777/222916391-1b5c79ad-c26a-49f6-b6f1-2b27e717d608.png)
