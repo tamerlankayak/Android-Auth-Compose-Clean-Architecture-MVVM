@@ -13,6 +13,7 @@ fun Navigation() {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
+        //as you can see here screen is starting with login page
         startDestination = ScreenRoutes.LoginScreen.route
     ) {
         composable(ScreenRoutes.LoginScreen.route) {
