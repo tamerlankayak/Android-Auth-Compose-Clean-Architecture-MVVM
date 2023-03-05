@@ -3,7 +3,7 @@ package com.example.composesample.authmoduleyt.domain.use_case
 import com.example.composesample.authmoduleyt.domain.model.RegisterInputValidationType
 import com.google.common.truth.Truth
 import org.junit.Test
-//testing input validation cases
+//testing register input validation cases
 class ValidateRegisterInputCaseTest {
 
     private val validateRegisterInputUseCase = ValidateRegisterInputCase()
