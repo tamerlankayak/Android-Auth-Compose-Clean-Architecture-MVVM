@@ -13,6 +13,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+//observation data changes states between ui and view model
 @HiltViewModel
 class LoginViewModel @Inject constructor(
     private val validateLoginInputCase: ValidateLoginInputCase,
