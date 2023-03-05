@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
+//final destination representation example of home page after authentication
 @Composable
 fun FinalDestination() {
     Box(
