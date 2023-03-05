@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.example.composesample.ui.theme.gray
 import com.example.composesample.ui.theme.orange
 
+//firt getting animations values for bubbles
 @Composable
 fun BubbleAnimation(
     bubbleColor1: Color,
@@ -76,6 +77,7 @@ fun BubbleAnimation(
             )
         )
 
+        //here is drawing bubbles
         Canvas(
             modifier = Modifier.fillMaxWidth()
         ) {
