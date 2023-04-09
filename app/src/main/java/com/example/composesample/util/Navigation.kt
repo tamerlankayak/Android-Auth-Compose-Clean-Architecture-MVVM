@@ -52,7 +52,7 @@ fun Navigation() {
     }
 }
 
-
+//decleration of screen names with sealed class
 sealed class ScreenRoutes(val route: String) {
     object LoginScreen : ScreenRoutes("login_screen")
     object RegisterScreen : ScreenRoutes("register_screen")
