@@ -9,7 +9,7 @@ Sample Auth Compose
 
 All clean architechture functionality used
 
-Test classes created for check each validation method
+Test classes created for check each validation method 
 
 Viewmodel
 
